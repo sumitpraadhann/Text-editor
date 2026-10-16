@@ -8,8 +8,8 @@
 
 html,
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     font-family: sans-serif;
 }
 
@@ -67,4 +67,22 @@ nav h1 {
     font-size: 14px;
     margin-left: 1px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 900px) {
+    #btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    section {
+        padding: 0 20px;
+    }
+
+    #textarea1 {
+        width: 100%;
+    }
 }
